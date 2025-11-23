@@ -1,0 +1,336 @@
+.about-hero {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.education-section {
+    background: #fff;
+}
+
+.education-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-year {
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #667eea;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.school-image {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.school-image img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.school-image img:hover {
+    transform: scale(1.05);
+}
+
+.timeline-content {
+    flex: 1;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 0 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    color: #667eea;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.leadership-section {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.leadership-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.leadership-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.leadership-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.leadership-card h3 {
+    color: #667eea;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.leadership-period {
+    color: #667eea;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.leadership-card p {
+    color: #666;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.interest-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-10px);
+}
+
+.interest-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.interest-card h3 {
+    color: #667eea;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.interest-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    .about-image img {
+        max-width: 300px;
+    }
+    .about-text h2 {
+        font-size: 2rem;
+    }
+    .about-text p {
+        font-size: 1rem;
+    }
+    .education-timeline {
+        padding: 1.5rem 0;
+        position: relative;
+    }
+    .education-timeline::before {
+        left: 40px;
+    }
+    .timeline-item {
+        flex-direction: row !important;
+        padding-left: 90px;
+        margin-bottom: 2rem;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .timeline-year {
+        position: absolute;
+        left: 0;
+        width: 80px;
+        font-size: 0.85rem;
+        padding: 0.8rem 0.5rem;
+        gap: 0.5rem;
+        flex-shrink: 0;
+    }
+    .timeline-year>div:first-child {
+        font-size: 0.85rem;
+        line-height: 1.2;
+    }
+    .school-image {
+        margin-top: 0.3rem;
+    }
+    .school-image img {
+        max-width: 50px;
+        border-radius: 6px;
+    }
+    .timeline-content {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1.5rem;
+        width: 100%;
+        flex: 1;
+    }
+    .timeline-content h3 {
+        font-size: 1.3rem;
+    }
+    .timeline-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    .leadership-card {
+        padding: 2rem 1.5rem;
+    }
+    .leadership-card h3 {
+        font-size: 1.5rem;
+    }
+    .leadership-period {
+        font-size: 0.95rem;
+    }
+    .leadership-card p {
+        font-size: 0.95rem;
+    }
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-image img {
+        max-width: 250px;
+    }
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+    .about-text p {
+        font-size: 0.95rem;
+    }
+    .education-timeline::before {
+        left: 32px;
+    }
+    .timeline-item {
+        padding-left: 75px;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .timeline-year {
+        width: 65px;
+        font-size: 0.8rem;
+        padding: 0.6rem 0.4rem;
+        position: absolute;
+        left: 0;
+    }
+    .timeline-year>div:first-child {
+        font-size: 0.8rem;
+    }
+    .school-image img {
+        max-width: 45px;
+    }
+    .timeline-content {
+        padding: 1.2rem;
+    }
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+    .leadership-card {
+        padding: 1.5rem 1rem;
+    }
+    .leadership-card h3 {
+        font-size: 1.3rem;
+    }
+    .leadership-icon {
+        font-size: 2.5rem;
+    }
+}
