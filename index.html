@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REN ZIMING - Personal Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"> <img src="./images/logo.jpg" alt="" class="logo-img"> REN ZIMING</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills & Portfolio</a></li>
+                <li><a href="daily.html">Daily Life</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="hero-section">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="./images/banner1.jpg" alt="">
+                <div class=" carousel-content ">
+                    <h1>Welcome to REN ZIMING's Blog</h1>
+                    <p>Marketing Student | Market Research Enthusiast</p>
+                </div>
+            </div>
+            <div class="carousel-slide ">
+                <img src="./images/banner2.jpg" alt=" ">
+
+            </div>
+            <div class="carousel-slide ">
+                <img src="./images/banner3.jpg" alt=" ">
+
+            </div>
+            <button class="carousel-btn prev " onclick="changeSlide(-1) ">&#10094;</button>
+            <button class="carousel-btn next " onclick="changeSlide(1) ">&#10095;</button>
+            <div class="carousel-dots ">
+                <span class="dot active " onclick="currentSlide(1) "></span>
+                <span class="dot " onclick="currentSlide(2) "></span>
+                <span class="dot " onclick="currentSlide(3) "></span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section ">
+        <div class="container ">
+            <h2 class="section-title ">REN, ZIMING</h2>
+            <div class="intro-content ">
+                <div class="intro-image ">
+                    <img src="images/b7.jpg " alt="REN ZIMING ">
+                </div>
+                <div class="intro-text ">
+                    <h3>Marketing Student | Macau University of Science & Technology</h3>
+                    <div class="basic-info ">
+                        <p><strong>📧 Email:</strong> <a href="mailto:2081286778@gmail.com ">2081286778@gmail.com</a>
+                        </p>
+                        <p><strong>📱 Phone:</strong> 19566075348</p>
+                        <p><strong>📍 Location:</strong> Macao (willing to relocate to HK / SZ / SH)</p>
+                        <p><strong>🎓 Education:</strong> BBA in Marketing | GPA: 3.6/4.0</p>
+                    </div>
+                    <p>Marketing undergraduate with 2+ years of hands-on market-research experience. I've designed, deployed, and analyzed 1,400+ questionnaires and 20 depth-interviews, lifting brand awareness by 23% and purchase intent by 27%.</p>
+                    <a href="about.html " class="btn ">Learn More About Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section quick-links-section ">
+        <div class="container ">
+            <h2 class="section-title ">Explore My World</h2>
+            <div class="quick-links ">
+                <div class="link-card ">
+                    <img src="./images/b6.jpg " alt="About ">
+                    <h3>About Me</h3>
+                    <p>Get to know more about my background, interests, and aspirations.</p>
+                    <a href="about.html " class="btn ">Read More</a>
+                </div>
+                <div class="link-card ">
+                    <img src="./images/b1.jpg " alt="Skills ">
+                    <h3>Skills & Portfolio</h3>
+                    <p>Discover my technical skills and view my latest projects.</p>
+                    <a href="skills.html " class="btn ">View Portfolio</a>
+                </div>
+                <div class="link-card ">
+                    <img src="./images/b5.jpg " alt="Daily Life ">
+                    <h3>Daily Life</h3>
+                    <p>Take a peek into my everyday experiences and moments.</p>
+                    <a href="daily.html " class="btn ">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer ">
+        <div class="footer-content ">
+            <p>&copy; 2025 REN ZIMING. All rights reserved.</p>
+            <div class="social-links ">
+                <a href="# " aria-label="Facebook ">📘</a>
+                <a href="# " aria-label="Twitter ">🐦</a>
+                <a href="# " aria-label="Instagram ">📷</a>
+                <a href="# " aria-label="LinkedIn ">💼</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/carousel.js "></script>
+</body>
+
+</html>
